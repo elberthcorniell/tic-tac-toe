@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 def putBoard
     puts "\nBoard:          Positions:\n\n"
     puts "___|___|___     1   2   3"
