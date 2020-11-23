@@ -2,14 +2,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-## Building Blocks - Bubble Sort
+## Tic-tac-toe
 
-Bubble sort algorithm using Ruby.
+Tic-tac-toe game using Ruby.
 
 
 ## About the Project
 
-This project implements the bubble sort and bubble sort by method algorithms.
+This project implements the tic-tac-toe game using Ruby.
 
 
 ## Built With
@@ -27,7 +27,7 @@ To run this project, you need a computer with Ruby installed.
 Clone the repository in your local machine and execute the file folder in terminal using ruby.
 
 ### Running the file
-Execute the file using ruby sort.rb in the terminal.
+Execute the file '/bin/main.rb' in the terminal.
 
 
 ## Author
@@ -39,18 +39,18 @@ Execute the file using ruby sort.rb in the terminal.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/elbert-corniell-989183159/)
 
 
-👩🏼‍💻 **Ana Paula Hübner**
+👨‍💻 **Breno Xavier**
 
-- GitHub: [@anapdh](https://github.com/anapdh)
-- Twitter: [@anapdh](https://twitter.com/anapdh)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ana-paula-hübner-7a9484181)
+- GitHub: [@brenoxav](https://github.com/brenoxav)
+- Twitter: [@brenoxav](https://twitter.com/brenoxav)
+- LinkedIn: [Breno Xavier](https://www.linkedin.com/in/brenoxav)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/elberthcorniell/bubble-sort-ruby/issues).
+Feel free to check the [issues page](https://github.com/brenoxav/tic-tac-toe/issues).
 
 
 ## Show your support
