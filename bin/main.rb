@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 def putBoard(arr = [])
     puts "\nBoard:          Positions:\n\n"
     puts "  #{arr[0]}  |  #{arr[1]}  |  #{arr[2]}     1     2     3"
@@ -66,6 +65,3 @@ while 1 do
     draw = true
     player = !player
 end
-
-
-
