@@ -2,41 +2,65 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-## Tic-tac-toe
+# Tic-tac-toe
 
-Tic-tac-toe game using Ruby.
+The classic tic-tac-toe game to be played in your terminal.
 
 
 ## About the Project
 
-This project implements the tic-tac-toe game using Ruby.
-
+This project implements the tic-tac-toe game using object-oriented Ruby.
 
 ## Built With
 
 - Ruby
 - Visual Studio, Git & GitHub
 
+## About Tic-tac-toe
+
+Tic-tac-toe is a game for two players, "X" and "O", who take turns marking the spaces in a 3×3 grid.
+
+The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
 ## Getting Started
 
 ### Prerequisites
-To run this project, you need a computer with Ruby installed.
 
-### Running the project
-Clone the repository in your local machine and execute the file folder in terminal using ruby.
+- Ruby
+- A terminal
 
-### Running the file
-Execute the file '/bin/main.rb' in the terminal.
+### Setup
 
+- Clone or download this repository
+- If necessary, unzip the downloaded directory
 
-## Author
+### Usage
+
+- Go into the "tic-tac-toe" directory
+- Execute the "main.rb" file
+
+```
+./bin/main.rb
+```
+
+- Follow the "How to play" instructions
+
+## How to Play
+
+1. The first player (Player 1) will choose their symbol "X" or "O". The remaining symbol will be assigned to the other player (Player 2);
+2. Enter Player 1's name;
+3. Enter Player 2's name;
+4. Starting with Player 1, turn after turn, each player will type a number (1 to 9) corresponding to their desired movement;
+5. The players continue making movements until one of them get three of their marks in a horizontal, vertical, or diagonal row;
+6. If no player gets three of their marks in a row after all the board's spots are marked, the game ends in a draw.
+
+## Authors
 
 👨‍💻 **Elbert Corniell**
 
 - GitHub: [@elberthcorniell](https://github.com/elberthcorniell)
 - Twitter: [@elberthcorniell](https://twitter.com/elberthcorniell)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/elbert-corniell-989183159/)
+- LinkedIn: [Elbert Corniell](https://www.linkedin.com/in/elbert-corniell-989183159/)
 
 
 👨‍💻 **Breno Xavier**
