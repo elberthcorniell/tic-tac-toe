@@ -29,20 +29,20 @@ while 1 do
     puts "Choose your next movement!"
     movement = gets.chomp.to_i
     clear
-    if ticTacToe.isValid movement # We need to check if the position is available too
+    if ticTacToe.isValid movement
         puts "Now, your move is displayed on the board!"
         ticTacToe.makeMovement movement
     else
         puts "Invalid movement!!!!"
         next
     end
-    if ticTacToe.didWin # We are going to check here if someone has won
+    if ticTacToe.didWin
         clear
         ticTacToe.putBoard
         puts "Player #{ticTacToe.turn ? 1 : 2} have won!"
         break
     end
-    if ticTacToe.isDraw # We are going to check here if theres a draw
+    if ticTacToe.isDraw
         clear    
         ticTacToe.putBoard
         puts "We have a Draw!"
