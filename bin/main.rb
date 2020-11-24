@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-include './lib/game.rb'
+require './lib/game'
 
 ticTacToe = nil
 def clear
@@ -36,16 +36,16 @@ while 1 do
         puts "Invalid movement!!!!"
         next
     end
-    if false # We are going to check here if someone has won
+    if ticTacToe.didWin # We are going to check here if someone has won
         clear
         ticTacToe.putBoard
         puts "Player #{ticTacToe.turn ? 1 : 2} have won!"
         break
     end
-    if ticTacToe.draw # We are going to check here if theres a draw
+    if ticTacToe.isDraw # We are going to check here if theres a draw
         clear    
         ticTacToe.putBoard
-        puts "Player #{ticTacToe.turn ? 1 : 2} move is a draw!"
+        puts "We have a Draw!"
         break
     end
     player = !player
