@@ -62,5 +62,52 @@ describe 'TicTacToe' do
             expect(game.draw?).to eql true
         end
     end
-
+    describe "#did_win?" do
+        it "Does not returns true if no player have won" do 
+            expect(game.did_win?).to_not eql true
+        end
+        it "Returns true if there's a column" do
+            game.make_movement 1
+            game.make_movement 2
+            game.make_movement 4
+            game.make_movement 5
+            game.make_movement 7
+            expect(game.did_win?).to eql true
+        end
+        it "Returns true if there's a row" do
+            game.make_movement 1
+            game.make_movement 4
+            game.make_movement 2
+            game.make_movement 5
+            game.make_movement 3
+            expect(game.did_win?).to eql true
+        end
+        it "Returns true if there's a diagonal" do
+            game.make_movement 1
+            game.make_movement 4
+            game.make_movement 5
+            game.make_movement 6
+            game.make_movement 9
+            expect(game.did_win?).to eql true
+        end
+    end
+    describe "#get_player_name" do
+        it "Does not return player 2 name at the start" do
+            expect(game.get_player_name).to_not eql name2
+        end
+        it "Returns player 1 name at the start" do
+            expect(game.get_player_name).to eql name1
+        end
+        it "Returns player 2 name at the start if we ask for the oposite player" do
+            expect(game.get_player_name true).to eql name2
+        end
+        it "Returns player 2 if it is player 2 turn" do
+            game.make_movement 6
+            expect(game.get_player_name).to eql name2
+        end
+        it "Returns player 1 name if it is player 2 turn and we ask for the oposite" do
+            game.make_movement 6
+            expect(game.get_player_name true).to eql name1
+        end
+    end
 end
