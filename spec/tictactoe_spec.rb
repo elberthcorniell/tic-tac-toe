@@ -28,4 +28,39 @@ describe 'TicTacToe' do
             expect(game.valid?5).to eql true
         end
     end
+    describe "#make_movement" do
+        it "Successfully makes a new movement" do
+            game.make_movement 4
+            expect(game.board).to eql [' ', ' ', ' ', 'X', ' ', ' ', ' ', ' ', ' ']
+        end
+        it "Successfully makes a new movement for both players" do
+            game.make_movement 4
+            game.make_movement 5
+            expect(game.board).to eql [' ', ' ', ' ', 'X', 'O', ' ', ' ', ' ', ' ']
+        end
+        it "Does not make_movements if the position is taked" do
+            game.make_movement 4
+            game.make_movement 5
+            expect(game.make_movement 4).to_not eql true
+        end
+    end
+
+    describe "#draw?" do
+        it "Does not returns true if there's empty positions" do 
+            expect(game.draw?).to_not eql true
+        end
+        it "Returns true if the game is draw" do 
+            game.make_movement 1
+            game.make_movement 2
+            game.make_movement 3
+            game.make_movement 4
+            game.make_movement 5
+            game.make_movement 6
+            game.make_movement 7
+            game.make_movement 8
+            game.make_movement 9
+            expect(game.draw?).to eql true
+        end
+    end
+
 end

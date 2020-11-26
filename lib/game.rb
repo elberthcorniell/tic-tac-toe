@@ -29,9 +29,7 @@ class TicTacToe
   end
 
   def draw?
-    available_positions = board.any? ' '
-    return false if available_positions
-    true
+    !board.any? ' '
   end
 
   def did_win?
