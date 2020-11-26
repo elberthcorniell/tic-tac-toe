@@ -29,7 +29,7 @@ class TicTacToe
   end
 
   def draw?
-    !board.any? ' '
+    board.none? ' '
   end
 
   def did_win?
@@ -40,6 +40,7 @@ class TicTacToe
     end
     return true if board[0] == symbol && board[4] == symbol && board[8] == symbol
     return true if board[2] == symbol && board[4] == symbol && board[6] == symbol
+
     false
   end
 
