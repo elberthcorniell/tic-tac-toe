@@ -50,6 +50,7 @@ loop do
     puts 'Invalid movement!!!!'
     next
   end
+  
   if tic_tac_toe.did_win?
     clear
     put_board tic_tac_toe.board
