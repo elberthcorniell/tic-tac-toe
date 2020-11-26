@@ -2,14 +2,7 @@
 # rubocop:disable Metrics/PerceivedComplexity
 # rubocop:disable Style/ClassVars
 
-class Player
-  attr_reader :name, :symbol
-
-  def initialize(name, symbol)
-    @name = name
-    @symbol = symbol
-  end
-end
+require_relative 'player'
 
 class TicTacToe
   attr_accessor :turn
@@ -38,7 +31,6 @@ class TicTacToe
   def draw?
     available_positions = board.any? ' '
     return false if available_positions
-
     true
   end
 
